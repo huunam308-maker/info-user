@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const firstName = 'Nam';
+  const user = {
+    name: 'Nguyễn Hữu Nam',
+    age: 18,
+    class: 'C2506L',
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>{`Welcome, ${firstName}`}</h2>
+      <p>Your information: </p>
+      <p>Họ tên: {user.name}</p>
+      <p>Tuổi: {user.age}</p>
+      <p>Lớp: {user.class}</p>
     </div>
   );
 }
